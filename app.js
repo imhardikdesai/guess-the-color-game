@@ -5,6 +5,7 @@ let b4 = document.getElementById('b4');
 let b5 = document.getElementById('b5');
 let b6 = document.getElementById('b6');
 let rgb = document.getElementById('rgb');
+let box = document.getElementsByClassName('box');
 
 let arr = ["b1", "b2", "b3", "b4", "b5", "b6"];
 
@@ -24,4 +25,11 @@ b4.style.backgroundColor = `${randomColor()}`;
 b5.style.backgroundColor = `${randomColor()}`;
 b6.style.backgroundColor = `${randomColor()}`;
 let rgbText = arr[Math.floor(Math.random() * arr.length)];
-rgb.innerText = `Color is ${rgbText.style.backgroundColor}`;
+console.log(rgbText);
+rgb.innerText = document.getElementById(`${rgbText}`).style.backgroundColor;
+
+function checkColor(myId) {
+    if (myId == rgbText) {
+        // win.style.display = 'block';
+    }
+}
