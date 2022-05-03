@@ -1,0 +1,62 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Title Area */
+.header {
+    background-color: #189AB4;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 5px;
+}
+
+/* Middle Area of Website */
+.middle {
+    font-size: 1.4rem;
+    color: black;
+    /* background-color: #75E6DA; */
+    background-image: url('assets/body-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    margin: 10px auto;
+    /* height: 86vh; */
+}
+
+/* Random RGB Value Genartor */
+#rgb {
+    border: 2px solid black;
+    display: block;
+    width: fit-content;
+    font-weight: 500;
+    margin: auto;
+    padding: 3px 20px;
+    border-radius: 26px;
+}
+
+/* Color Box CSS */
+.color-box {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    margin: 25px 0px;
+}
+
+.box {
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: red;
+}
+
+/* Bottom Part */
