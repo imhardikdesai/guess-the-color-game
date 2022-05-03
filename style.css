@@ -1,6 +1,11 @@
 body {
     margin: 0%;
     padding: 0%;
+    /* background-image: url('Assets/body-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #E9E7EA;
 }
 
 /* Title Area */
@@ -17,14 +22,11 @@ body {
 .middle {
     font-size: 1.4rem;
     color: black;
-    /* background-color: #75E6DA; */
-    background-image: url('assets/body-bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 10px;
     margin: 10px auto;
-    /* height: 86vh; */
+    height: 68vh;
+    overflow: auto;
+    /* border: 2px solid yellow; */
 }
 
 /* Random RGB Value Genartor */
@@ -50,13 +52,20 @@ body {
 }
 
 .box {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 25px;
     margin: 25px;
     width: 150px;
     height: 150px;
     text-align: center;
-    background-color: red;
+    background-color: green;
+    border-radius: 20px;
 }
 
 /* Bottom Part */
+.bottom {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
