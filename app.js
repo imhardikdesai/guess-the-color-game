@@ -30,6 +30,15 @@ rgb.innerText = document.getElementById(`${rgbText}`).style.backgroundColor;
 
 function checkColor(myId) {
     if (myId == rgbText) {
-        // win.style.display = 'block';
+        document.getElementById('win').style.display = 'block';
+        for (let i = 0; i < box.length; i++) {
+            box[i].style.backgroundColor = `${document.getElementById(`${rgbText}`).style.backgroundColor}`;
+        }
+        checkColor() = "";
+
+    }
+    else {
+        document.getElementById(`${myId}`).style.display = 'none';
+        document.getElementById('lose').style.display = 'block';
     }
 }

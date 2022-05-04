@@ -74,12 +74,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-#lose{
+#lose {
     display: none;
 }
-#win{
+
+#win {
     display: none;
-}
-.d-flex{
-    display: flex;
 }
