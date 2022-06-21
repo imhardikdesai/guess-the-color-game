@@ -26,7 +26,7 @@ b5.style.backgroundColor = `${randomColor()}`;
 b6.style.backgroundColor = `${randomColor()}`;
 let rgbText = arr[Math.floor(Math.random() * arr.length)];
 console.log(rgbText);
-rgb.innerText = document.getElementById(`${rgbText}`).style.backgroundColor;
+rgb.innerText = (document.getElementById(`${rgbText}`).style.backgroundColor).toUpperCase();
 
 function checkColor(myId) {
     if (myId == rgbText) {
@@ -34,8 +34,10 @@ function checkColor(myId) {
         for (let i = 0; i < box.length; i++) {
             box[i].style.backgroundColor = `${document.getElementById(`${rgbText}`).style.backgroundColor}`;
         }
-        checkColor() = "";
+        function checkColor() {
 
+        }
+        checkColor();
     }
     else {
         document.getElementById(`${myId}`).style.display = 'none';
