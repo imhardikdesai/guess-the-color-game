@@ -70,7 +70,7 @@ This is a game where you have given RGB value of color and bellow there are six 
   
 - Go to directory
 ```
-$ cd Stunners-Hub-Beauty-Store
+$ cd Guess-the-color-game
 ```
 - Start LocalHost Server
 ```
