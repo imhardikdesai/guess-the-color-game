@@ -10,7 +10,7 @@
 </div>
 
 <h3 align="center">
-          Live Project : <a href="https://imhardikdesai.github.io/guess-the-color-game/">Guess The Color Game</a>
+          Live Project : <a target="_blank" href="https://imhardikdesai.github.io/guess-the-color-game/">Guess The Color Game</a>
 </h3>
 <br />
 
