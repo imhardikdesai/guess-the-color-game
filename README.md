@@ -10,7 +10,7 @@
 </div>
 
 <h3 align="center">
-          Live Project : <a hreg="https://imhardikdesai.github.io/guess-the-color-game/">Guess The Color Game</a>
+          Live Project : <a target="_blank" href="https://imhardikdesai.github.io/guess-the-color-game/">Guess The Color Game</a>
 </h3>
 <br />
 
@@ -70,7 +70,7 @@ This is a game where you have given RGB value of color and bellow there are six 
   
 - Go to directory
 ```
-$ cd Stunners-Hub-Beauty-Store
+$ cd Guess-the-color-game
 ```
 - Start LocalHost Server
 ```
