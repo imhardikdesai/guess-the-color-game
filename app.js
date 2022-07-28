@@ -30,7 +30,7 @@ b6.style.backgroundColor = `${randomColor()}`;
 //Set RGB Value in Indicator
 
 let rgbText = arr[Math.floor(Math.random() * arr.length)];  // Select Ranom box from array
-console.log(rgbText);
+// console.log(rgbText);
 rgb.innerText = (document.getElementById(`${rgbText}`).style.backgroundColor).toUpperCase();  // Show RGB Value of that random box
 
 
@@ -42,6 +42,9 @@ function checkColor(myId) {
         // box.removeEventListener('click', checkColor);
         for (let i = 0; i < box.length; i++) {
             box[i].style.backgroundColor = `${document.getElementById(`${rgbText}`).style.backgroundColor}`;
+        }
+        checkColor = () => {
+            return true;
         }
     }
     else {
