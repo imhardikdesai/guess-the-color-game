@@ -42,6 +42,7 @@ function checkColor(myId) {
         // box.removeEventListener('click', checkColor);
         for (let i = 0; i < box.length; i++) {
             box[i].style.backgroundColor = `${document.getElementById(`${rgbText}`).style.backgroundColor}`;
+
         }
         checkColor = () => {
             return true;
@@ -51,5 +52,6 @@ function checkColor(myId) {
         document.getElementById(`${myId}`).style.display = 'none';
         document.getElementById('lose').style.display = 'block';
         document.getElementById('win').style.display = 'none';
+        // document.getElementsByClassName('box').classList.add('clide')
     }
 }
