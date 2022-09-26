@@ -30,9 +30,7 @@
     <!-- Middle Part -->
     <div class="middle container">
         <div id="rgb">RGB Value</div>
-        <a href="https://imhardikdesai.github.io/guess-the-color-game/">
-            <button type="button" class="btn btn-danger">New Game</button>
-        </a>
+        <button type="button" class="btn btn-danger" onclick="window.location.reload();">New Game</button>
         <!-- Color Box -->
         <div class="color-box container">
             <div id="b1" onclick="checkColor(this.id)" class="box"></div>
@@ -45,7 +43,7 @@
     </div>
     <!-- Footer Menu -->
 
-    <div class="bottom container">
+    <span class="bottom container">
         <div id="win" class="alert alert-success" role="alert">
             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
                 <use xlink:href="#check-circle-fill" />
@@ -57,7 +55,7 @@
             </svg>
             Try again ☹️
         </div>
-    </div>
+    </span>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
