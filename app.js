@@ -8,6 +8,9 @@ let rgb = document.getElementById('rgb');
 let box = document.getElementsByClassName('box');
 
 let arr = ["b1", "b2", "b3", "b4", "b5", "b6"];
+var audio = new Audio("Assets/click.wav");
+var win = new Audio("Assets/win.mp3");
+var no = new Audio("Assets/no.mp3");
 
 //Genrate Random color
 function randomColor() {
@@ -33,8 +36,9 @@ let rgbText = arr[Math.floor(Math.random() * arr.length)];  // Select Ranom box 
 // console.log(rgbText);
 rgb.innerText = (document.getElementById(`${rgbText}`).style.backgroundColor).toUpperCase();  // Show RGB Value of that random box
 
-
 function checkColor(myId) {
+
+    audio.play();
 
     if (myId == rgbText) {
         document.getElementById('win').style.display = 'block';
@@ -47,8 +51,10 @@ function checkColor(myId) {
         checkColor = () => {
             return true;
         }
+        win.play();
     }
     else {
+        no.play();
         document.getElementById(`${myId}`).style.display = 'none';
         document.getElementById('lose').style.display = 'block';
         document.getElementById('win').style.display = 'none';
